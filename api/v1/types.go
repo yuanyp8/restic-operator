@@ -15,3 +15,16 @@ type TargetRef struct {
 	//+optional
 	Namespace string `json:"namespace,omitempty"`
 }
+
+type RetentionPolicy struct {
+	Name        string   `json:"name"`
+	KeepLast    int64    `json:"keepLast,omitempty"`
+	KeepHourly  int64    `json:"keepHourly,omitempty"`
+	KeepDaily   int64    `json:"keepDaily,omitempty"`
+	KeepWeekly  int64    `json:"keepWeekly,omitempty"`
+	KeepMonthly int64    `json:"keepMonthly,omitempty"`
+	KeepYearly  int64    `json:"keepYearly,omitempty"`
+	KeepTags    []string `json:"keepTags,omitempty"`
+	Prune       bool     `json:"prune"`
+	DryRun      bool     `json:"dryRun,omitempty"`
+}
