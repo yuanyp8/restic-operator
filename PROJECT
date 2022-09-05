@@ -1,0 +1,16 @@
+domain: metavarse.com
+layout:
+- go.kubebuilder.io/v3
+projectName: restic-operator
+repo: github.com/yuanyp8/restic-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: metavarse.com
+  group: restic
+  kind: BackupSession
+  path: github.com/yuanyp8/restic-operator/api/v1
+  version: v1
+version: "3"

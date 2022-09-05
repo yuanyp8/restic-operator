@@ -1,0 +1,6 @@
+apiVersion: restic.metavarse.com/v1
+kind: BackupSession
+metadata:
+  name: backupsession-sample
+spec:
+  # TODO(user): Add fields here
